@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Laucr\\OneDrive\\Documentos\\Lau Estudio\\Taller de lenguajes\\Tp8\\tl1-tp8-2025-Lau02x\\ToDo\\ToDo.csproj": {}
+    "D:\\Familia\\Lau Facultad\\Taller de lenguaje\\Tp8\\tl1-tp8-2025-Lau02x\\ToDo\\ToDo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Laucr\\OneDrive\\Documentos\\Lau Estudio\\Taller de lenguajes\\Tp8\\tl1-tp8-2025-Lau02x\\ToDo\\ToDo.csproj": {
+    "D:\\Familia\\Lau Facultad\\Taller de lenguaje\\Tp8\\tl1-tp8-2025-Lau02x\\ToDo\\ToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Laucr\\OneDrive\\Documentos\\Lau Estudio\\Taller de lenguajes\\Tp8\\tl1-tp8-2025-Lau02x\\ToDo\\ToDo.csproj",
+        "projectUniqueName": "D:\\Familia\\Lau Facultad\\Taller de lenguaje\\Tp8\\tl1-tp8-2025-Lau02x\\ToDo\\ToDo.csproj",
         "projectName": "ToDo",
-        "projectPath": "C:\\Users\\Laucr\\OneDrive\\Documentos\\Lau Estudio\\Taller de lenguajes\\Tp8\\tl1-tp8-2025-Lau02x\\ToDo\\ToDo.csproj",
+        "projectPath": "D:\\Familia\\Lau Facultad\\Taller de lenguaje\\Tp8\\tl1-tp8-2025-Lau02x\\ToDo\\ToDo.csproj",
         "packagesPath": "C:\\Users\\Laucr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Laucr\\OneDrive\\Documentos\\Lau Estudio\\Taller de lenguajes\\Tp8\\tl1-tp8-2025-Lau02x\\ToDo\\obj\\",
+        "outputPath": "D:\\Familia\\Lau Facultad\\Taller de lenguaje\\Tp8\\tl1-tp8-2025-Lau02x\\ToDo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Laucr\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.409/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
