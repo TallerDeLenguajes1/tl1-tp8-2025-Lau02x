@@ -1,9 +1,18 @@
 ﻿using Tareas;
+using System.Collections.Generic;
+using System.Security.Cryptography;
 //menu para hacer todas estas funciones 
 int activo = 1;
 string buff;
 int eleccion = 0;
 int cantidad = 0;
+Random random = new Random();
+int id_random = 0;
+string descripcion_random = 0;
+int duracion_random = 0;
+List<Tarea> TareasPendientes = new List<Tarea>();
+List<Tarea> TareasRealizadas = new List<Tarea>();
+
 do
 {
     do{
@@ -22,13 +31,45 @@ do
     switch (eleccion)
     {
         case 1:
-            do
-            {
-                System.Console.WriteLine("Cuantas tareas aleatorias creara? escriba un numero mayor a 0");
-                buff = Console.ReadLine();
-                cantidad = int.TryParse(buff);
-            } while (!int.TryParse(buff, out cantidad) || cantidad<=0);
+                do
+                {
+                    System.Console.WriteLine("Cuantas tareas aleatorias creara? escriba un numero mayor a 0");
+                    buff = Console.ReadLine();
+                } while (!int.TryParse(buff, out cantidad) || cantidad<=0);
+                
+                for (int i = 0; i < cantidad; i++)
+                {
+                    Tarea x= new Tarea();
+                    id_random = random.Next(10);
+                    descripcion_random = ((TareasRandom)random.Next(0, 5)).ToString();
+                    duracion_random = random.Next(10, 101);
+                    TareasPendientes.Add(x.CrearTarea(id_random, descripcion_random, duracion_random));
+                }
                 break;
+        case 2:
+                do
+                {
+                    System.Console.WriteLine("Cual tarea mover a realizada? (Elegir id)");
+                    buff = Console.ReadLine();
+                } while (!int.TryParse(buff, out eleccion));
+                 Tarea tareaAMover=TareasPendientes.Find(t => t.TareaID == eleccion);
+            if (tareaAMover != null)
+            {
+                TareasPendientes.Remove(tareaAMover);
+                TareasRealizadas.Add(tareaAMover);
+                System.Console.WriteLine("Tarea movida con exito");
+            }
+            else
+            {
+                System.Console.WriteLine("No se pudo mover la tarea o no existe");                
+            }
+            break;
+        case 3:
+                
+
+
+                break;                
+
 
             
         default:
@@ -65,7 +106,4 @@ do
 
 
 
-
-List<Tarea> TareasPendientes = [];
-List<Tarea> TareasCompletadas = [];
 
