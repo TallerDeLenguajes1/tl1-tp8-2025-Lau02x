@@ -23,10 +23,14 @@ namespace Tareas
         public Tarea CrearTarea(int tareaId, string descripcion, int duracion)
         {
             Tarea nuevaTarea = new Tarea();
-            nuevaTarea.tareaID = TareaID;
-            nuevaTarea.descripcion = Descripcion;
-            nuevaTarea.duracion = Duracion;
+            nuevaTarea.tareaID = tareaId;
+            nuevaTarea.descripcion = descripcion;
+            nuevaTarea.duracion = duracion;
             return nuevaTarea;
+        }
+        public void MostrarTarea()
+        {
+            System.Console.WriteLine($"TareaId:{TareaID}, Descripcion: {Descripcion},duracion: {Duracion}");
         }
     }
 }
